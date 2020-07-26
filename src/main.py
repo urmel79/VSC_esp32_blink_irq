@@ -14,4 +14,4 @@ def isr_timer(timer):           # we will receive the timer object when being ca
     global led
     led.value(not led.value())  # toggle the LED
 
-tim.init(mode=Timer.PERIODIC, period=100, callback=isr_timer)
+tim.init(mode=Timer.PERIODIC, period=400, callback=isr_timer)
